@@ -1,12 +1,14 @@
 import React from 'react';
 
 function Panel(props) {
-    console.log(props.color);
-    return (
-        <section className="panel" style={{ backgroundColor: props.color }}>
-            {props.children}
-        </section>
-    );
+    let color;
+    if (props.color === 'dark') {
+        color = 'dark';
+    } else {
+        color = 'light';
+    }
+
+    return <section className={`panel ${color}`}>{props.children}</section>;
 }
 
 export default Panel;

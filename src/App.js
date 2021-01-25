@@ -1,13 +1,20 @@
 import React from 'react';
-import './app.css';
 
 import Panel from './Components/Panel';
+import ImageCircle from './Components/ImageCircle';
+import HelloCard from './Components/HelloCard';
+
+import './app.css';
+import profilepic from './images/profilepic.png';
 
 function App() {
     return (
         <>
-            <Panel color="white">Hi</Panel>
-            <Panel color="#f2f2f2">Hi</Panel>
+            <Panel color="light">
+                <ImageCircle source={profilepic} />
+                <HelloCard />
+            </Panel>
+            <Panel color="dark">Hi</Panel>
         </>
     );
 }
