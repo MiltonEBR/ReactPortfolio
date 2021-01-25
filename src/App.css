@@ -186,6 +186,7 @@ p {
 /*Skill card*/
 .skill-card {
     width: 350px;
+    min-width: 275px;
     min-height: 350px;
     padding: 50px;
     background-color: var(--light-color);
