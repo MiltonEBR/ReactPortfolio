@@ -1,14 +1,30 @@
 import React from 'react';
 
 function Button(props) {
-    return (
-        <div className="btn-holder">
-            <span className={`btn-shadow-${props.design ? props.design : 'light'}`}></span>
-            <button type="button" className={`btn btn-${props.design ? props.design : 'light'}`}>
+    const design = props.design;
+
+    if (design === 'light' || design === 'dark') {
+        return (
+            <div className="btn-holder">
+                <span className={`btn-shadow-${design}`}></span>
+                <button type="button" className={`btn btn-${design}`}>
+                    {props.txt}
+                </button>
+            </div>
+        );
+    } else if (design === 'simple-light' || design === 'simple-dark') {
+        return (
+            <button type="button" className={`btn btn-${design}`}>
                 {props.txt}
             </button>
-        </div>
-    );
+        );
+    } else {
+        return (
+            <button type="button" className="btn">
+                {props.txt}
+            </button>
+        );
+    }
 }
 
 export default Button;

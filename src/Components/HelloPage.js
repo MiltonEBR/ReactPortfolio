@@ -11,7 +11,7 @@ export default function HelloPage() {
         <>
             <ImageCircle source={profilepic} />
             <HelloCard>
-                <Button txt="Skills" />
+                <Button txt="Skills" design="light" />
                 <Button txt="Resume" design="dark" />
             </HelloCard>
         </>
