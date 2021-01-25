@@ -1,6 +1,6 @@
 import React from 'react';
 
-function HelloCard() {
+function HelloCard(props) {
     return (
         <div className="hi-card">
             <h1 className="hi-title">Hello, im Milton Eduardo</h1>
@@ -13,6 +13,7 @@ function HelloCard() {
                 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
                 adipisci velit...
             </p>
+            <span className="hi-grid">{props.children}</span>
         </div>
     );
 }
