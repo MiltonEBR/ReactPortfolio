@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 function Button(props) {
     const design = props.design;
@@ -16,6 +18,15 @@ function Button(props) {
         return (
             <button type="button" className={`btn btn-${design}`}>
                 {props.txt}
+            </button>
+        );
+    } else if (design === 'github') {
+        return (
+            <button type="button" className={`btn btn-github`}>
+                <span>{props.txt}</span>
+                <IconContext.Provider value={{ className: 'gith-ico' }}>
+                    <FaGithub />
+                </IconContext.Provider>
             </button>
         );
     } else {
