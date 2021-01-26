@@ -8,10 +8,14 @@
     --dark-blue: rgb(0, 88, 204);
     --dark-blue-shadow: rgba(33, 129, 255, 0.2);
 
+    --tan-blue: rgb(41, 115, 212);
+
     --light-txt: white;
     --dark-txt: rgb(61, 61, 61);
 
     --black-shadow: rgba(61, 61, 61, 0.1);
+
+    --btn-shadow: rgba(0, 0, 0, 0.3);
 
     --clear-btn-trans: rgba(255, 255, 255, 0);
     --clear-btn-hover: rgba(255, 255, 255, 0.15);
@@ -172,12 +176,14 @@ p {
     background-color: var(--light-blue);
     color: var(--light-txt);
     border-radius: 25px;
+    box-shadow: 0px 3px 5px var(--btn-shadow);
 }
 
 .btn-simple-dark {
     background-color: var(--dark-blue);
     color: var(--light-txt);
     border-radius: 25px;
+    box-shadow: 0px 3px 5px var(--btn-shadow);
 }
 
 .btn-github {
@@ -347,11 +353,43 @@ p {
 
 /*Contact*/
 .contact-btn {
-    width: 100%;
+    position: relative;
+    z-index: 1;
+    width: 101%;
     height: 200px;
-    background-color: red;
+    background-color: var(--tan-blue);
     transform: skew(-45deg);
     margin-bottom: 60px;
+}
+
+.contact-btn:first-child {
+    background-color: var(--dark-blue);
+}
+
+.contact-btn:first-child::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0%;
+    right: 99%;
+    z-index: -1;
+    background-color: var(--dark-blue);
+}
+
+.contact-btn:last-child {
+    background-color: var(--light-blue);
+}
+
+.contact-btn:last-child::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0%;
+    left: 99%;
+    z-index: -1;
+    background-color: var(--light-blue);
 }
 
 .contact-holder {
@@ -368,6 +406,6 @@ p {
 .contact-ico {
     fill: var(--light-txt);
     transform: skew(45deg);
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }

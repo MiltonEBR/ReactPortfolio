@@ -4,6 +4,8 @@ import Title from './Title';
 import ContactButton from './ContactButton';
 
 import { MdMailOutline } from 'react-icons/md';
+import { FaGithub } from 'react-icons/fa';
+import { TiSocialLinkedinCircular } from 'react-icons/ti';
 
 export default function ContactPage() {
     return (
@@ -14,10 +16,10 @@ export default function ContactPage() {
                     <MdMailOutline />
                 </ContactButton>
                 <ContactButton>
-                    <MdMailOutline />
+                    <FaGithub />
                 </ContactButton>
                 <ContactButton>
-                    <MdMailOutline />
+                    <TiSocialLinkedinCircular />
                 </ContactButton>
             </div>
         </div>
