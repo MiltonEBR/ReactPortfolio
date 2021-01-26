@@ -8,7 +8,11 @@ function Panel(props) {
         color = 'light';
     }
 
-    return <section className={`panel ${color}`}>{props.children}</section>;
+    return (
+        <section className={`panel ${color}${props.size === 'small' ? ' small' : ''}`}>
+            {props.children}
+        </section>
+    );
 }
 
 export default Panel;

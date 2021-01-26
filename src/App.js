@@ -4,6 +4,7 @@ import Panel from './Components/Panel';
 import HelloPage from './Components/HelloPage';
 import SkillsPage from './Components/SkillsPage';
 import ProjectsPage from './Components/ProjectsPage';
+import ContactPage from './Components/ContactPage';
 
 import './app.css';
 
@@ -18,6 +19,9 @@ function App() {
             </Panel>
             <Panel color="light">
                 <ProjectsPage />
+            </Panel>
+            <Panel color="dark" size="small">
+                <ContactPage />
             </Panel>
         </>
     );

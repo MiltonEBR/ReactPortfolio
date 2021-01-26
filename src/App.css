@@ -49,6 +49,10 @@ p {
     background-color: var(--dark-color);
 }
 
+.small {
+    min-height: min-content;
+}
+
 /*My picture*/
 .logo-holder {
     position: relative;
@@ -272,8 +276,8 @@ p {
     border-radius: 30px;
 
     margin-bottom: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     flex-shrink: 0;
 
     overflow: hidden;
@@ -339,4 +343,31 @@ p {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+/*Contact*/
+.contact-btn {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    transform: skew(-45deg);
+    margin-bottom: 60px;
+}
+
+.contact-holder {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    margin-top: 150px;
+    background-color: var(--dark-color);
+}
+
+.contact-ico {
+    fill: var(--light-txt);
+    transform: skew(45deg);
+    width: 50px;
+    height: 50px;
 }
