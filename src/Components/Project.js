@@ -18,10 +18,7 @@ export default function Project(props) {
             <div className="proj-info">
                 {active ? (
                     <>
-                        <p>
-                            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-                            consectetur, adipisci velit… Neque porro quisquam est qui dolorem ipsum
-                        </p>
+                        <p>{props.children}</p>
                         <Button txt="Github" design="github" />
                     </>
                 ) : (

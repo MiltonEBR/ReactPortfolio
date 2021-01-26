@@ -246,14 +246,14 @@ p {
     height: 150px;
 }
 
-.skills-holder {
+.many-holder {
     align-self: flex-start;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.skills-holder > .btn {
+.many-holder > .btn {
     align-self: center;
 }
 
@@ -270,6 +270,11 @@ p {
     background-color: var(--light-blue);
     position: relative;
     border-radius: 30px;
+
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-shrink: 0;
 
     overflow: hidden;
 }
@@ -326,4 +331,12 @@ p {
 
 .proj-info:hover > .click-ico {
     opacity: 1;
+}
+
+.projects {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }

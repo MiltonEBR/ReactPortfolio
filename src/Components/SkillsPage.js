@@ -8,7 +8,7 @@ import { ReactComponent as CardSvg } from '../images/browser.svg';
 
 export default function SkillsPage() {
     return (
-        <div className="skills-holder">
+        <div className="many-holder">
             <Title txt="My" keyword="Skills 🔨" color="dark" />
             <div className="cards">
                 <SkillCard
