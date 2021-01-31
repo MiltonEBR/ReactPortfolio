@@ -352,6 +352,12 @@ p {
 }
 
 /*Contact*/
+
+.contact {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .contact-btn {
     position: relative;
     z-index: 1;

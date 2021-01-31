@@ -6,21 +6,21 @@ import SkillsPage from './Components/SkillsPage';
 import ProjectsPage from './Components/ProjectsPage';
 import ContactPage from './Components/ContactPage';
 
-import './app.css';
+import './App.css';
 
 function App() {
     return (
         <>
-            <Panel color="light">
+            <Panel color="light" name="hello">
                 <HelloPage />
             </Panel>
-            <Panel color="dark">
+            <Panel color="dark" name="skills">
                 <SkillsPage />
             </Panel>
-            <Panel color="light">
+            <Panel color="light" name="projects">
                 <ProjectsPage />
             </Panel>
-            <Panel color="dark" size="small">
+            <Panel color="dark" size="small" name="contact">
                 <ContactPage />
             </Panel>
         </>

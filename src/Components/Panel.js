@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScrollElement } from 'react-scroll';
 
 function Panel(props) {
     let color;
@@ -9,10 +10,13 @@ function Panel(props) {
     }
 
     return (
-        <section className={`panel ${color}${props.size === 'small' ? ' small' : ''}`}>
+        <section
+            className={`panel ${color}${props.size === 'small' ? ' small' : ''}`}
+            name={props.name}
+        >
             {props.children}
         </section>
     );
 }
 
-export default Panel;
+export default ScrollElement(Panel);

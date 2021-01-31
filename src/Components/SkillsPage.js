@@ -4,6 +4,8 @@ import Title from './Title';
 import SkillCard from './SkillCard';
 import Button from './Button';
 
+import { scrollTo } from './scrollTo';
+
 import { ReactComponent as CardSvg } from '../images/browser.svg';
 
 export default function SkillsPage() {
@@ -32,7 +34,13 @@ export default function SkillsPage() {
                     <CardSvg className="skill-svg" />
                 </SkillCard>
             </div>
-            <Button txt="Projects" design="simple-dark" />
+            <Button
+                txt="Projects"
+                design="simple-dark"
+                action={() => {
+                    scrollTo('projects');
+                }}
+            />
         </div>
     );
 }

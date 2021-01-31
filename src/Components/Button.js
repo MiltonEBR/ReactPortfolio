@@ -9,20 +9,20 @@ function Button(props) {
         return (
             <div className="btn-holder">
                 <span className={`btn-shadow-${design}`}></span>
-                <button type="button" className={`btn btn-${design}`}>
+                <button type="button" className={`btn btn-${design}`} onClick={props.action}>
                     {props.txt}
                 </button>
             </div>
         );
     } else if (design === 'simple-light' || design === 'simple-dark') {
         return (
-            <button type="button" className={`btn btn-${design}`}>
+            <button type="button" className={`btn btn-${design}`} onClick={props.action}>
                 {props.txt}
             </button>
         );
     } else if (design === 'github') {
         return (
-            <button type="button" className={`btn btn-github`}>
+            <button type="button" className={`btn btn-github`} onClick={props.action}>
                 <span>{props.txt}</span>
                 <IconContext.Provider value={{ className: 'gith-ico' }}>
                     <FaGithub />
@@ -31,7 +31,7 @@ function Button(props) {
         );
     } else {
         return (
-            <button type="button" className="btn">
+            <button type="button" className="btn" onClick={props.action}>
                 {props.txt}
             </button>
         );

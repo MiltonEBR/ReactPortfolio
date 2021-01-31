@@ -4,6 +4,8 @@ import Title from './Title';
 import Project from './Project';
 import Button from './Button';
 
+import { scrollTo } from './scrollTo';
+
 import cato from '../images/cato.jpg';
 
 export default function ProjectsPage() {
@@ -28,7 +30,13 @@ export default function ProjectsPage() {
                     adipisci velit… Neque porro quisquam est qui dolorem ipsum
                 </Project>
             </div>
-            <Button txt="Contact" design="simple-light" />
+            <Button
+                txt="Contact"
+                design="simple-light"
+                action={() => {
+                    scrollTo('contact');
+                }}
+            />
         </div>
     );
 }
