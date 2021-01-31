@@ -19,7 +19,13 @@ export default function Project(props) {
                 {active ? (
                     <>
                         <p>{props.children}</p>
-                        <Button txt="Github" design="github" />
+                        <Button
+                            txt="Github"
+                            design="github"
+                            action={() => {
+                                window.open('http://github.com', '_blank');
+                            }}
+                        />
                     </>
                 ) : (
                     <>
