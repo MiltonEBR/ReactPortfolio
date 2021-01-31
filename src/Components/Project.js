@@ -6,16 +6,16 @@ import Button from './Button';
 export default function Project(props) {
     const [active, setActive] = useState(false);
 
-    const toggleActive = () => {
+    const toggleActive = (e) => {
         setActive((prev) => {
             return !prev;
         });
     };
 
     return (
-        <article className={`proj${active ? ' proj-active' : ''}`} onClick={toggleActive}>
+        <article className={`proj${active ? ' proj-active' : ''}`}>
             <img src={props.img} alt="" />
-            <div className="proj-info">
+            <div className="proj-info" onClick={toggleActive}>
                 {active ? (
                     <>
                         <p>{props.children}</p>
