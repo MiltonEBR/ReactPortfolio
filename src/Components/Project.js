@@ -23,7 +23,7 @@ export default function Project(props) {
                             txt="Github"
                             design="github"
                             action={() => {
-                                window.open('http://github.com', '_blank');
+                                window.open(props.link, '_blank');
                             }}
                         />
                     </>

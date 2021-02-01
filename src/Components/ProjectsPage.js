@@ -6,29 +6,21 @@ import Button from './Button';
 
 import { scrollTo } from './scrollTo';
 
-import cato from '../images/cato.jpg';
+import { projectsData } from './projectsData';
 
 export default function ProjectsPage() {
     return (
         <div className="many-holder">
             <Title txt="Side" keyword="Projects 🔬" color="light"></Title>
             <div className="projects">
-                <Project ttl="Project example" img={cato}>
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                    adipisci velit… Neque porro quisquam est qui dolorem ipsum
-                </Project>
-                <Project ttl="Project example" img={cato}>
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                    adipisci velit… Neque porro quisquam est qui dolorem ipsum
-                </Project>
-                <Project ttl="Project example" img={cato}>
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                    adipisci velit… Neque porro quisquam est qui dolorem ipsum
-                </Project>
-                <Project ttl="Project example" img={cato}>
-                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                    adipisci velit… Neque porro quisquam est qui dolorem ipsum
-                </Project>
+                {projectsData.map((project, i) => {
+                    const { title, desc, img, link } = project;
+                    return (
+                        <Project ttl={title} img={img} link={link}>
+                            {desc}
+                        </Project>
+                    );
+                })}
             </div>
             <Button
                 txt="Contact"
