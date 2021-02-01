@@ -18,7 +18,7 @@ export default function Project(props) {
             <div className="proj-info" onClick={toggleActive}>
                 {active ? (
                     <>
-                        <p>{props.children}</p>
+                        {props.children}
                         <Button
                             txt="Github"
                             design="github"

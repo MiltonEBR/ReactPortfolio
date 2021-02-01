@@ -24,10 +24,10 @@ export default function ContactPage() {
             />
 
             <div className="contact-holder">
-                <ContactButton>
+                <ContactButton link="https://mailto:miltonqr1@gmail.com">
                     <MdMailOutline />
                 </ContactButton>
-                <ContactButton>
+                <ContactButton link="https://github.com/MiltonEBR">
                     <FaGithub />
                 </ContactButton>
                 <ContactButton>

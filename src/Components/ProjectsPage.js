@@ -16,7 +16,7 @@ export default function ProjectsPage() {
                 {projectsData.map((project, i) => {
                     const { title, desc, img, link } = project;
                     return (
-                        <Project ttl={title} img={img} link={link}>
+                        <Project key={i} ttl={title} img={img} link={link}>
                             {desc}
                         </Project>
                     );

@@ -1,14 +1,14 @@
 :root {
     --light-color: rgb(255, 255, 255);
-    --dark-color: rgb(221, 221, 221);
+    --dark-color: rgb(230, 230, 230);
 
-    --light-blue: rgb(103, 181, 255);
-    --light-blue-shadow: rgba(67, 160, 223, 0.3);
+    --light-blue: rgb(157, 209, 255);
+    --light-blue-shadow: rgba(46, 157, 231, 0.3);
 
-    --dark-blue: rgb(0, 88, 204);
+    --dark-blue: rgb(69, 120, 233);
     --dark-blue-shadow: rgba(33, 129, 255, 0.2);
 
-    --tan-blue: rgb(41, 115, 212);
+    --tan-blue: rgb(146, 196, 252);
 
     --light-txt: white;
     --dark-txt: rgb(32, 32, 32);
@@ -234,10 +234,6 @@ p {
     color: var(--light-blue);
 }
 
-.highlight {
-    color: var(--light-blue);
-}
-
 /*Skill card*/
 .skill-card {
     width: 350px;
@@ -253,7 +249,14 @@ p {
     margin-right: 10px;
 }
 
+.skill-card > p {
+    font-size: 1.5em;
+}
+
 .skill-card > h2 {
+    display: flex;
+    align-items: flex-end;
+    height: 75px;
     font-weight: 700;
     font-size: 2em;
     margin-bottom: 20px;
@@ -299,9 +302,10 @@ p {
 
 .proj > img {
     position: relative;
-    top: -25%;
+    top: 0%;
     opacity: 0.4;
     width: 100%;
+    min-height: 100%;
 
     transition: opacity 300ms;
 }
@@ -328,6 +332,11 @@ p {
     font-size: 1.5em;
     position: relative;
     z-index: 0;
+    color: var(--light-txt);
+}
+
+.proj-info > p > b {
+    font-weight: 700;
     color: var(--light-txt);
 }
 
