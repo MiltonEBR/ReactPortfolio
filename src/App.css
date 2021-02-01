@@ -11,7 +11,7 @@
     --tan-blue: rgb(41, 115, 212);
 
     --light-txt: white;
-    --dark-txt: rgb(61, 61, 61);
+    --dark-txt: rgb(32, 32, 32);
 
     --black-shadow: rgba(61, 61, 61, 0.1);
 
@@ -33,7 +33,7 @@
 }
 
 p {
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 .panel {
@@ -231,6 +231,10 @@ p {
 }
 
 .keyword-light {
+    color: var(--light-blue);
+}
+
+.highlight {
     color: var(--light-blue);
 }
 
