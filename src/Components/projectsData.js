@@ -3,6 +3,9 @@ import party from '../images/pakapu.png';
 import reactlogo from '../images/reactlogo.png';
 import pokemon from '../images/pokemon.png';
 import portfolio from '../images/portfolio.png';
+import cyk from '../images/CYK.png';
+import replace from '../images/stringr.png';
+import rsa from '../images/RSA.png';
 
 const projectsData = [
     {
@@ -65,7 +68,7 @@ const projectsData = [
                 This was a project for my <b>Computational Maths</b> class.
             </p>
         ),
-        img: gato,
+        img: rsa,
         link: 'https://github.com/MiltonEBR/RSAMessagingApp',
     },
     {
@@ -77,7 +80,7 @@ const projectsData = [
                 This was a project for my <b>Computational Maths</b> class. Made with <b>Java</b>.
             </p>
         ),
-        img: gato,
+        img: cyk,
         link: 'https://github.com/MiltonEBR/CYKAlgorithm',
     },
     {
@@ -90,7 +93,7 @@ const projectsData = [
                 This was a project for my <b>Computational Maths</b> class. Made with <b>Java</b>.
             </p>
         ),
-        img: gato,
+        img: replace,
         link: 'https://github.com/MiltonEBR/CYKAlgorithm',
     },
     // {
