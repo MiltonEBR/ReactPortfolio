@@ -444,3 +444,21 @@ p {
     user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 }
+
+@media (max-width: 900px) {
+    .panel {
+        flex-direction: column;
+        padding: 100px 5vw;
+    }
+    .hi-card {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-card:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
