@@ -1,4 +1,4 @@
-import gato from '../images/cato.jpg';
+//import gato from '../images/cato.jpg';
 import party from '../images/pakapu.png';
 import reactlogo from '../images/reactlogo.png';
 import pokemon from '../images/pokemon.png';
