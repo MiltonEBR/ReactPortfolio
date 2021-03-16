@@ -15,7 +15,7 @@ export default function Project(props) {
     return (
         <article className={`proj${active ? ' proj-active' : ''}`}>
             <img src={props.img} alt="" />
-            <div className="proj-info" onClick={toggleActive}>
+            <div className="proj-info noselect" onClick={toggleActive}>
                 {active ? (
                     <>
                         {props.children}
