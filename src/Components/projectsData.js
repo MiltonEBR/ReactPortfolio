@@ -56,11 +56,49 @@ const projectsData = [
         link: 'https://github.com/MiltonEBR/PortfolioWebsite',
     },
     {
-        title: 'Coming Soon',
-        desc: <p>I have more projects! I just haven't added them yet.</p>,
+        title: 'RSA Messaging App',
+        desc: (
+            <p>
+                A <b>Java</b> chat application based on sockets that encrypts messages sent with
+                RSA.
+                <br />
+                This was a project for my <b>Computational Maths</b> class.
+            </p>
+        ),
         img: gato,
-        link: 'https://github.com/MiltonEBR/',
+        link: 'https://github.com/MiltonEBR/RSAMessagingApp',
     },
+    {
+        title: 'CYK Algorithm',
+        desc: (
+            <p>
+                A <b>CYK</b> parsing algorithm that checks if a string can be generated.
+                <br />
+                This was a project for my <b>Computational Maths</b> class. Made with <b>Java</b>.
+            </p>
+        ),
+        img: gato,
+        link: 'https://github.com/MiltonEBR/CYKAlgorithm',
+    },
+    {
+        title: 'String Replacement Automata',
+        desc: (
+            <p>
+                This <b>Automata</b> replaces a string based on a pattern of your choice using state
+                tables.
+                <br />
+                This was a project for my <b>Computational Maths</b> class. Made with <b>Java</b>.
+            </p>
+        ),
+        img: gato,
+        link: 'https://github.com/MiltonEBR/CYKAlgorithm',
+    },
+    // {
+    //     title: 'Coming Soon',
+    //     desc: <p>I have more projects! I just haven't added them yet.</p>,
+    //     img: gato,
+    //     link: 'https://github.com/MiltonEBR/',
+    // },
 ];
 
 export { projectsData };
