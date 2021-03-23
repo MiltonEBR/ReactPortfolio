@@ -1,8 +1,23 @@
 import React from 'react';
 
 function ImageCircle(props) {
-    const size = 475;
+    const [width, setWidth] = React.useState(window.innerWidth);
 
+    let size = width > 500 ? 475 : 375;
+
+    React.useEffect(() => {
+        function handleResize() {
+            setWidth(window.innerWidth);
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    });
+
+    let r = width > 500 ? 220 : 170;
     return (
         <div className="logo-holder">
             <img
@@ -13,7 +28,7 @@ function ImageCircle(props) {
                 width={size - 100}
             />
             <svg height={size} width={size}>
-                <circle cx={size / 2} cy={size / 2} r="220" className="circle-svg" />
+                <circle cx={size / 2} cy={size / 2} r={r} className="circle-svg" />
             </svg>
         </div>
     );

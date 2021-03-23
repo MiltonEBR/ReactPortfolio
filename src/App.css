@@ -445,11 +445,23 @@ p {
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
+@media (max-width: 500px) {
+    /* .logo-holder > svg {
+        transform: scale(0.75);
+    }
+
+    .logo-holder > img {
+        width: 60%;
+        height: 60%;
+    } */
+}
+
 @media (max-width: 900px) {
     .panel {
         flex-direction: column;
         padding: 100px 5vw;
     }
+
     .hi-card {
         margin-left: 0px;
         margin-top: 15px;
@@ -460,5 +472,58 @@ p {
     }
     .skill-card:not(:last-child) {
         margin-bottom: 25px;
+    }
+
+    .proj {
+        width: 350px;
+        height: 450px;
+    }
+
+    .proj > img {
+        left: -60%;
+        width: 225%;
+        height: 100%;
+    }
+
+    .proj-info > p {
+        height: 300px;
+    }
+
+    .click-ico {
+        top: 70%;
+    }
+
+    .ttl-txt {
+        font-size: 3rem;
+        white-space: normal;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .cards {
+        margin: 45px 0px;
+    }
+
+    .projects {
+        margin: 0px;
+        margin-top: 45px;
+    }
+
+    .contact-holder {
+        margin: 0px;
+        top: 90%;
+    }
+
+    .contact-btn {
+        left: -10%;
+        transform: skew(-25deg);
+    }
+
+    .contact-ico {
+        transform: skew(25deg);
+        width: 80px;
+        height: 80px;
     }
 }
