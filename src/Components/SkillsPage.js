@@ -17,30 +17,31 @@ export default function SkillsPage() {
             <div className="cards">
                 <SkillCard title="Computer Science" svg={<CSSvg className="skill-svg" />}>
                     <p>
-                        I have knowledge on <span className="keyword-dark">OOP</span>,{' '}
+                        I have vast experience with <span className="keyword-dark">OOP</span>,{' '}
                         <span className="keyword-dark">Data Structures</span> and{' '}
-                        <span className="keyword-dark">Algorithms</span>, used mainly on Java.
+                        <span className="keyword-dark">Algorithms</span>.
+                        <br />
+                        <br />
+                        Applied mainly on Java.
                     </p>
                 </SkillCard>
 
                 <SkillCard title="Web Dev" svg={<WebSvg className="skill-svg" />}>
                     <p>
-                        I have experience in <span className="keyword-dark">backend</span> with Java
-                        and Node.js
-                        <br />
-                        <br />
-                        With frontend <span className="keyword-dark">knowledge</span> on React,
-                        HTML, CSS and Sass
+                        I like working on <span className="keyword-dark">frontend </span> by using
+                        React, HTML, CSS and Sass
+                        <br />I have basic knowledge on how to work with{' '}
+                        <span className="keyword-dark">backend</span> using Node.js
                     </p>
                 </SkillCard>
 
                 <SkillCard title="Game Dev" svg={<GameSvg className="skill-svg" />}>
                     <p>
-                        I have prototyped games on <span className="keyword-dark">Unity</span> using{' '}
-                        <span className="keyword-dark">C#</span> and I'm currently learning{' '}
-                        <span className="keyword-dark">Godot</span> with
-                        <span className="keyword-dark"> C++</span> and
-                        <span className="keyword-dark"> GDScript</span>.
+                        I have prototyped games in <span className="keyword-dark">Unity</span> using{' '}
+                        <span className="keyword-dark">C#.</span>
+                        <br />
+                        Im currently learning <span className="keyword-dark">C++</span> in order to
+                        use it with Unreal Engine.
                     </p>
                 </SkillCard>
             </div>
