@@ -20,7 +20,7 @@ export default function HelloPage() {
                         scrollTo('skills');
                     }}
                 />
-                <Button txt="Resume" design="dark" />
+                {/* <Button txt="Resume" design="dark" /> */}
             </HelloCard>
         </>
     );

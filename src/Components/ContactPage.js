@@ -30,7 +30,7 @@ export default function ContactPage() {
                 <ContactButton link="https://github.com/MiltonEBR">
                     <FaGithub />
                 </ContactButton>
-                <ContactButton>
+                <ContactButton link="https://linkedin.com/in/milton-ebr">
                     <TiSocialLinkedinCircular />
                 </ContactButton>
             </div>
