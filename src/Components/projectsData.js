@@ -6,6 +6,7 @@ import portfolio from '../images/portfolio.png';
 import cyk from '../images/CYK.png';
 import replace from '../images/stringr.png';
 import rsa from '../images/RSA.png';
+import diaguin from '../images/diaguin.png';
 
 const projectsData = [
     {
@@ -95,6 +96,18 @@ const projectsData = [
         ),
         img: replace,
         link: 'https://github.com/MiltonEBR/CYKAlgorithm',
+    },
+    {
+        title: 'Diaguin Web App',
+        desc: (
+            <p>
+                Currently developing my first <b>Web App</b>! A learning focused to-do list.
+                <br />
+                This is only the <b>Frontend</b>, developed using <b>React</b>, <b>TailWindCSS</b> and <b>TypeScript</b>.
+            </p>
+        ),
+        img: diaguin,
+        link: 'https://github.com/MiltonEBR/diaguin-fe',
     },
     // {
     //     title: 'Coming Soon',

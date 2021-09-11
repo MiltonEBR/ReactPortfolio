@@ -22,16 +22,15 @@ export default function SkillsPage() {
                         <span className="keyword-dark">Algorithms</span>.
                         <br />
                         <br />
-                        Applied mainly on Java.
+                        I am currently getting into <span className="keyword-dark">machine learning</span> with Python.
                     </p>
                 </SkillCard>
 
                 <SkillCard title="Web Dev" svg={<WebSvg className="skill-svg" />}>
                     <p>
-                        I like working on <span className="keyword-dark">frontend </span> by using
-                        React, HTML, CSS and Sass
-                        <br />I have basic knowledge on how to work with{' '}
-                        <span className="keyword-dark">backend</span> using Node.js
+                        I have a decent <span className="keyword-dark">FullStack knowledge</span>, mainly applied using the <span className="keyword-dark">MERN</span> stack.
+                        <br /><br />
+                        I've just began using <span className="keyword-dark">TypeScript</span> as I find statically typed languages to be safer and fun to work with.
                     </p>
                 </SkillCard>
 
@@ -39,9 +38,8 @@ export default function SkillsPage() {
                     <p>
                         I have prototyped games in <span className="keyword-dark">Unity</span> using{' '}
                         <span className="keyword-dark">C#.</span>
-                        <br />
-                        Im currently learning <span className="keyword-dark">C++</span> in order to
-                        use it with Unreal Engine.
+                        <br /> <br />
+                        My first game was developed in <span className="keyword-dark">Java</span> without any game focused libraries.
                     </p>
                 </SkillCard>
             </div>
